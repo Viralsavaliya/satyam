@@ -47,13 +47,13 @@ function App(props) {
             //     })
             // }
         } else {
-            props.history.push('/login');
+            props.history.push('/');
         }
     }, [routess, props.history])
 
     let routes = (
         <Switch>
-            <Route path='/login' component={Login} />
+            <Route path='/' component={Login} />
             <Route path='/page-register' component={SignUp} />
             <Route path='/page-forgot-password' component={ForgotPassword} />
         </Switch>

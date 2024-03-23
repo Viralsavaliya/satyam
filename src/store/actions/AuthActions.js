@@ -60,7 +60,7 @@ export function logout(history) {
     //         })
     // })
     localStorage.removeItem('adminDetails');
-    history.push('/login');
+    history.push('/');
     return {
         type: LOGOUT_ACTION,
     };
